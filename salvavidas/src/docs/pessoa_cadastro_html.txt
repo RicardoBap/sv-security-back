@@ -1,0 +1,93 @@
+<div class="container">
+
+  <mat-card>
+
+    <h1>Nova pessoa</h1>
+
+    <form  [formGroup]="pessoaForm" (ngSubmit)="submit()" >
+
+      <div>
+        <mat-form-field class="full-width">
+          <mat-label><b>Nome</b></mat-label>
+          <input matInput placeholder="Ricardo" formControlName="nome" required >
+          <mat-error *ngIf="pessoaForm.controls.nome.hasError('required')">
+            Informe o nome
+          </mat-error>
+          <mat-error *ngIf="pessoaForm.controls.nome.hasError('minlength')" >
+            Nome deve ter {{ pessoaForm.controls.nome.errors.minlength.requiredLength }} caracteres.
+            Você digitou {{ pessoaForm.controls.nome.errors.minlength.actualLength }}  
+          </mat-error>
+        </mat-form-field>       
+      </div> 
+
+      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutGap="30px" >
+        <mat-form-field fxFlex="70" class="full-width" >
+          <mat-label><b>Logradouro</b></mat-label>
+          <input matInput placeholder="Av. Paulista" formControlName="logradouro" required >
+          <mat-error *ngIf="pessoaForm.controls.logradouro.hasError('required')">
+            Informe o logradouro
+          </mat-error>
+          <mat-hint>Rua, Av., Rod., Travessa</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="30" class="full-width" >
+          <mat-label><b>Número</b></mat-label>
+          <input matInput placeholder="0000" formControlName="numero" required >
+          <mat-error *ngIf="pessoaForm.controls.numero.hasError('required')">
+            Informe o número
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutGap="30px" >
+        <mat-form-field fxFlex="33" class="full-width" >
+          <mat-label><b>Complemento</b></mat-label>
+          <input matInput placeholder="apto. 100" formControlName="complemento" >
+        </mat-form-field>
+
+        <mat-form-field fxFlex="33" class="full-width" >
+          <mat-label><b>Bairro</b></mat-label>
+          <input matInput placeholder="Bela Vista" formControlName="bairro" required >
+          <mat-error *ngIf="pessoaForm.controls.bairro.hasError('required')">
+            Informe o bairro
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="33" class="full-width" >
+          <mat-label><b>Telefone</b><i> (celular)</i></mat-label>
+          <input matInput mask="(00)00000-0000" placeholder="(00) 00000-0000" formControlName="telefone" required >
+          <mat-error *ngIf="pessoaForm.controls.telefone.hasError('required')">
+            Informe o número de telefone
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="start start" fxLayoutGap="30px" >
+        <mat-form-field fxFlex="50" class="full-width" >
+          <mat-label><b>Cidade</b></mat-label>
+          <input matInput placeholder="São Paulo" formControlName="cidade" required >
+          <mat-error *ngIf="pessoaForm.controls.cidade.hasError('required')">
+            Informe a cidade
+          </mat-error>
+        </mat-form-field>
+
+        <mat-form-field fxFlex="50" class="full-width" >
+          <mat-label><b>Encargo</b></mat-label>
+          <input matInput placeholder="Secretário" formControlName="nome" required >
+          <mat-error *ngIf="pessoaForm.controls.encargo.hasError('required')">
+            Informe o encargo
+          </mat-error>
+        </mat-form-field>
+      </div>
+
+      <button mat-raised-button type="submit" color="primary" style="margin-right: 10px; margin-top: 20px;">
+        Salvar
+      </button>
+      <button mat-stroked-button color="primary" style="margin-right: 10px;">Novo</button>
+      <a href="javascript:;">Voltar para a pesquisa</a>  
+
+    </form>    
+
+  </mat-card>
+
+</div>

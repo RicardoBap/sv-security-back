@@ -1,0 +1,28 @@
+1619915449696	Rename compilation unit 'StardadError.java'
+1619916147302	Encapsulate field 'status'
+1619955111749	Delete element
+1619955119513	Delete element
+1619969720664	Rename compilation unit 'RecursoNaoEncontradoException.java'
+1619971099753	Delete element
+1619971566598	Delete element
+1619979213644	Delete element
+1619979236223	Delete element
+1619988391787	Encapsulate field 'pessoa'
+1619988727947	Encapsulate field 'dataPagamento'
+1619988737460	Encapsulate field 'dataVencimento'
+1619988819009	Delete element
+1620043894141	Rename compilation unit 'LancamentoModel.java'
+1620057766383	Copy compilation unit
+1620416819865	Encapsulate field 'telefone'
+1620416826560	Encapsulate field 'encargo'
+1620416852678	Delete element
+1620416915732	Encapsulate field 'email'
+1620426499060	Encapsulate field 'list'
+1620428552200	Delete element
+1620428556007	Delete element
+1620428563168	Delete element
+1620432657421	Encapsulate field 'senha'
+1620436332330	Move compilation unit
+1620436874187	Delete element
+1620476770518	Copy compilation unit
+1620486366123	Delete element

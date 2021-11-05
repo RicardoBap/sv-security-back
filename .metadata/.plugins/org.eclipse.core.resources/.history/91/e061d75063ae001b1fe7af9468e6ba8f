@@ -1,0 +1,5 @@
+package com.ricbap.salvavidas.core.config;
+
+public class SecuritConfig {
+
+}

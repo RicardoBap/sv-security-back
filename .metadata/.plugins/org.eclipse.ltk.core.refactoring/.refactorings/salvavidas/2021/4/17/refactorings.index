@@ -1,0 +1,10 @@
+1619092505312	Encapsulate field 'response'
+1619092511639	Encapsulate field 'codigo'
+1619092822615	Extract method 'adicionarHeaderLocation'
+1619095312289	Rename type 'ModelMapper'
+1619096879071	Encapsulate field 'endereco'
+1619103363160	Encapsulate field 'codigo'
+1619115582255	Delete element
+1619124876260	Rename type 'LancamentoRpository'
+1619183894399	Delete element
+1619183924925	Delete element
